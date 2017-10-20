@@ -6,10 +6,10 @@ mergedData["Mean",] = c(colMeans(mergedData[1:561], na.rm = TRUE), NA, NA, NA) #
 mergedData["StdDev",] = c(sapply(mergedData[1:561], sd), NA, NA, NA)
 
 # 3- Uses descriptive activity names to name the activities in the data set
-      # -> Descriptive activity names are stored in xtest$activity and xtrain$activity 
+      # -> This task was met in the first R script: tidyData.R
 
 # 4- Appropriately labels the data set with descriptive variable names.
-      # -> The original variable names, although complex, are descriptive. The new ones (subject/activity/id) are descriptive as well.
+      # -> This task was met in the first R script: tidyData.R
 
 # 5- From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 s = split(mergedData, mergedData$activity)
